@@ -521,3 +521,29 @@
 |entityType|Integer|true|minvalue: 0<br>maxvalue: 128|The entityType which status is informed by "status" param.|
 |entityID|Integer|true|minvalue: 0<br>maxvalue: 128|The corresponding ID of entityType which status is informed by "status" param.|
 |status|Common.EntityStatus|true|-|Status of External User Consent Settings entity: "ON" or "OFF"|
+
+### DateTime
+|Name|Type|Mandatory|Additional|Description|
+|:---|:---|:--------|:---------|:----------|
+|millisecond|Integer|false|minvalue="0"<br>maxvalue="999"|Milliseconds|
+|second|Integer|false|minvalue="0"<br>maxvalue="60"|Seconds part of time|
+|minute|Integer|false|minvalue="0"<br>maxvalue="59"|Minutes part of time|
+|hour|Integer|false|minvalue="0"<br>maxvalue="23"|Hours part of time. Note that this structure accepts time only in 24 Hr format|
+|day|Integer|false|minvalue="1"<br>maxvalue="31"|Day of the month|
+|month|Integer|false|minvalue="1"<br>maxvalue="12"|Month of the year|
+|year|Integer|false|maxvalue="4095"|mandatory="false"|The year in YYYY format|
+|tz_hour|Integer|false|minvalue="-12"<br>maxvalue="14"<br>defvalue="0" |Time zone offset in Hours with regard to UTC|
+|tz_minute|Integer|false|minvalue="0"<br>maxvalue="59"<br>defvalue="0"| Time zone offset in Min with regard to UTC|
+
+### OASISAddress
+|Name|Type|Mandatory|Additional|Description|
+|:---|:---|:--------|:---------|:----------|
+|countryName|String|false|minlength="0"<br>maxlength="200"|Name of the country (localized)|
+|countryCode|String|false|minlength="0"<br>maxlength="200"|Name of country (ISO 3166-2)|
+|postalCode|String|false|minlength="0"<br>maxlength="200"|(PLZ, ZIP, PIN, CAP etc.)|
+|administrativeArea|String|false|minlength="0"<br>maxlength="200"|Portion of country (e.g. state)|
+|subAdministrativeAre|String|false|minlength="0"<br>maxlength="200"|Portion of administrativeArea (e.g. county)|
+|locality|String|false|minlength="0"<br>maxlength="200"|Hypernym for city/village|
+|subLocality|String|false|minlength="0"<br>maxlength="200"|Hypernym for district|
+|thoroughfare|String|false|minlength="0"<br>maxlength="200"|Hypernym for street, road etc|
+|subThoroughfare|String|false|minlength="0"<br>maxlength="200"|Portion of thoroughfare (e.g. house number)|
