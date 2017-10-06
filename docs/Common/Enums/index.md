@@ -878,3 +878,10 @@ Radio Buttons
 |:---|:----|:----------|
 |ON|0||
 |OFF|1||
+
+### DeliveryMode
+|Name|Value|Description|
+|:---|:----|:----------|
+|PROMPT|0||
+|DESTINATION|1||
+|QUEUE|2||
